@@ -24,7 +24,7 @@ Note that the file should not include the total number of lines. All lines must 
 class SearchEngineWithFile(private val fileData: List<String>) {
     private lateinit var input: String
     private var menu = StringBuilder().apply {
-        appendLine("=== ${Titles.MENU.title} ===")
+        appendLine("=== ${Title.MENU.title} ===")
         appendLine("1. Find a person")
         appendLine("2. Print all people")
         append("0. Exit")
@@ -58,7 +58,7 @@ class SearchEngineWithFile(private val fileData: List<String>) {
 
     private fun printAllData() {
         val result = StringBuilder().apply {
-            appendLine("=== ${Titles.LIST_PEOPLE.title} ===")
+            appendLine("=== ${Title.LIST_PEOPLE.title} ===")
             fileData.forEach { appendLine(it) }
         }
         println(result)

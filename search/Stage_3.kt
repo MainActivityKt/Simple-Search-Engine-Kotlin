@@ -3,19 +3,15 @@ package search
 import kotlin.system.exitProcess
 
 
-
-
-
 class SearchEngineWithMenu() {
     private lateinit var input: String
     private var data: List<String> = getInputs()
     private var menu = StringBuilder().apply {
-        appendLine("=== ${Titles.MENU.title} ===")
+        appendLine("=== ${Title.MENU.title} ===")
         appendLine("1. Find a person")
         appendLine("2. Print all people")
         append("0. Exit")
     }
-
 
     fun start() {
         printMenu()
@@ -51,7 +47,7 @@ class SearchEngineWithMenu() {
 
     private fun printAllData() {
         val result = StringBuilder().apply {
-            appendLine("=== ${Titles.LIST_PEOPLE.title} ===")
+            appendLine("=== ${Title.LIST_PEOPLE.title} ===")
             data.forEach { appendLine(it) }
         }
         println(result)
@@ -67,7 +63,6 @@ class SearchEngineWithMenu() {
         }
         println()
     }
-
 
     private fun printMenu() {
         println(menu)

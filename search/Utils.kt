@@ -13,8 +13,12 @@ fun getInputs(): MutableList<String> {
     return data
 }
 
-enum class Titles(val title: String) {
+enum class Title(val title: String) {
     MENU("Menu"),
     LIST_PEOPLE("List of people")
 
+}
+
+enum class Strategy {
+    ALL, ANY, NONE
 }
