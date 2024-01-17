@@ -3,9 +3,6 @@ package search
 import kotlin.system.exitProcess
 
 
-
-
-
 class SearchEngineWithMenu() {
     private lateinit var input: String
     private var data: List<String> = getInputs()
@@ -15,7 +12,6 @@ class SearchEngineWithMenu() {
         appendLine("2. Print all people")
         append("0. Exit")
     }
-
 
     fun start() {
         printMenu()
