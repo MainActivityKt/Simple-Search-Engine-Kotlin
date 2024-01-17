@@ -28,17 +28,7 @@ First, the user should input a number N, which is the number of data lines they 
   After each query, the program should print the information it managed to find among the data. You can see this
    searching process in the example below.
  */
-fun getInputs(): MutableList<String> {
-    println("Enter the number of people:")
-    val data = mutableListOf<String>()
-    val size = readln().toInt()
-    println("Enter all people:")
-    repeat(size) {
-        data.add(readln())
-    }
-    println()
-    return data
-}
+
 
 fun performSearch(data: List<String>) {
     println("Enter the number of search queries:")
