@@ -13,15 +13,11 @@ A very basic searching engine!
 
 Run either **main.kt** with the argument `1` or, **Stage_1.kt** file
 
-input 
+input
 
-```console
-roses daises dahlias
-daises
-```
+    roses daises dahlias
+    daises
 
 output
 
-```console
-2
-```
+    2
