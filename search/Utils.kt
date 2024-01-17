@@ -12,3 +12,9 @@ fun getInputs(): MutableList<String> {
     println()
     return data
 }
+
+enum class Titles(val title: String) {
+    MENU("Menu"),
+    LIST_PEOPLE("List of people")
+
+}

@@ -3,11 +3,7 @@ package search
 import kotlin.system.exitProcess
 
 
-enum class Titles(val title: String) {
-    MENU("Menu"),
-    LIST_PEOPLE("List of people")
 
-}
 
 
 class SearchEngineWithMenu() {
