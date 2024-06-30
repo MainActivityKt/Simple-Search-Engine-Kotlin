@@ -29,34 +29,43 @@ First, the user should input a number N, which is the number of data lines they 
    searching process in the example below.
  */
 
+class Stage2 {
+    private val data = mutableListOf<String>()
 
-fun performSearch(data: List<String>) {
-    println("Enter the number of search queries:")
-    val n = readln().toInt()
-    println()
-
-    repeat(n) {
-        println("Enter data to search people:")
-        val input = readln().lowercase()
-        val foundData = mutableListOf<String>()
-
-        data.forEach {
-            if (it.contains(input, ignoreCase = true)) {
-                foundData.add(it)
-            }
-        }
-        if (foundData.isNotEmpty()) {
-            println()
-            println("People found:")
-            foundData.forEach { println(it) }
-        } else {
-            println("No matching people found.")
-        }
+    init {
+        data.addAll(getInputs())
+    }
+    private fun performSearch(data: List<String>) {
+        println("Enter the number of search queries:")
+        val n = readln().toInt()
         println()
+
+        repeat(n) {
+            println("Enter data to search people:")
+            val input = readln().lowercase()
+            val foundData = mutableListOf<String>()
+
+            data.forEach {
+                if (it.contains(input, ignoreCase = true)) {
+                    foundData.add(it)
+                }
+            }
+            if (foundData.isNotEmpty()) {
+                println()
+                println("People found:")
+                foundData.forEach { println(it) }
+            } else {
+                println("No matching people found.")
+            }
+            println()
+        }
+    }
+
+    fun run() {
+        performSearch(data)
     }
 }
 
 fun main() {
-    val data = getInputs()
-    performSearch(data)
+    Stage2().run()
 }
