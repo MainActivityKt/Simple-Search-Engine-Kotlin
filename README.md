@@ -1,6 +1,6 @@
 # Simple Search Engine (Kotlin)
 
-Simple Search Engine is one of the projects in Kotlin Developer track at Hyperskill.
+Simple Search Engine is one of the projects in Kotlin Developer track on Hyperskill.
 
 [Open poroject at Hyperskill](https://hyperskill.org/projects/89)
 
