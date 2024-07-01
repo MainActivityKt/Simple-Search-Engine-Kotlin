@@ -13,7 +13,7 @@ class SearchEngineWithMenu() {
         append("0. Exit")
     }
 
-    fun start() {
+    fun run() {
         printMenu()
         getNewInput()
         while (true) {
@@ -73,5 +73,5 @@ class SearchEngineWithMenu() {
 
 fun main() {
     val searchEngine = SearchEngineWithMenu()
-    searchEngine.start()
+    searchEngine.run()
 }

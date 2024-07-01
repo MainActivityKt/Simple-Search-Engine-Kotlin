@@ -1,5 +1,6 @@
 package src
 
+import search.SearchEngineWithMenu
 import search.Stage1
 import search.Stage2
 
@@ -27,6 +28,7 @@ fun runStage(stageNumber: Int) {
     when(stageNumber) {
         1 -> Stage1().run()
         2 -> Stage2().run()
+        3-> SearchEngineWithMenu().run()
     }
 }
 fun main(args: Array<String>) {
